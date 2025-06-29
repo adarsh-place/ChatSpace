@@ -9,21 +9,18 @@
 </div>
 
 <h2>🚀 Features</h2>
-<ul style="list-style-type: none; padding-left: 0;">
-  <li>✅ <strong>User Sign Up and Login</strong> with JWT authentication</li>
-  <li>⚡ <strong>Real-time messaging</strong> using Socket.IO</li>
-  <li>🔒 <strong>Secure password hashing</strong> with bcrypt</li>
-  <li>☁️ <strong>AWS S3 integration</strong> for profile image storage</li>
-  <li>🔄 <strong>Profile update:</strong>
-    <ul style="list-style-type: none; padding-left: 20px;">
-      <li>• Change name</li>
-      <li>• Change password</li>
-      <li>• Update profile photo</li>
+  ✅ <strong>User Sign Up and Login</strong> with JWT authentication<br/>
+  ⚡ <strong>Real-time messaging</strong> using Socket.IO<br/>
+  🔒 <strong>Secure password hashing</strong> with bcrypt<br/>
+  ☁️ <strong>AWS S3 integration</strong> for profile image storage<br/>
+  🔄 <strong>Profile update:</strong><br/>
+    <ul>
+      <li>Change name</li>
+      <li>Change password</li>
+      <li>Update profile photo</li>
     </ul>
-  </li>
-  <li>🍪 <strong>Cookie-based JWT token storage</strong> for persistent login sessions</li>
-  <li>📱 <strong>UI</strong> with React</li>
-</ul>
+  🍪 <strong>Cookie-based JWT token storage</strong> for persistent login sessions<br/>
+  📱 <strong>UI</strong> with React<br/>
 
 <h2>🛠️ Tech Stack</h2>
 <table>
@@ -50,7 +47,7 @@
   <tr>
     <td><strong>Authentication</strong></td>
     <td>
-      <ul style="margin-top: 0; padding-left: 20px;">
+      <ul>
         <li>JWT for issuing and verifying tokens</li>
         <li>Cookies to store tokens securely</li>
         <li>bcrypt for hashing passwords</li>
@@ -64,7 +61,7 @@
 </table>
 
 <h2>⚙️ How It Works</h2>
-<div style="background-color: #f5f5f5; padding: 15px; border-radius: 5px;">
+<div>
   <h3>User Authentication</h3>
   <ul>
     <li>Sign-up creates a hashed password with bcrypt.</li>
@@ -96,13 +93,13 @@
 
  <h2>🌐 Live Demo</h2>
 <p>The application is hosted on Render and can be accessed at:</p>
-<div style="background-color: #f0f8ff; padding: 10px; border-radius: 5px; border-left: 4px solid #2962ff;">
-  <a href="https://chatspace-uynx.onrender.com/" target="_blank" style="color: #2962ff; text-decoration: none; font-weight: bold;">
+<div>
+  <span>
+    LIVE : 
+  </span>
+  <a href="https://chatspace-uynx.onrender.com/" target="_blank">
     https://chatspace-uynx.onrender.com/
   </a>
-  <span style="margin-left: 10px; background-color: #2962ff; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.8em;">
-    LIVE
-  </span>
 </div>
 <p>Note: The backend services might take a few moments to spin up if they've been idle.</p>
 
@@ -118,21 +115,21 @@
 <ol>
   <li>
     <strong>Clone the repo:</strong>
-    <div style="background-color: #2d2d2d; color: #f5f5f5; padding: 10px; border-radius: 5px; font-family: monospace;">
+    <div>
       git clone https://github.com/your-username/chatspace.git<br>
       cd chatspace
     </div>
   </li>
   <li>
     <strong>Install server dependencies:</strong>
-    <div style="background-color: #2d2d2d; color: #f5f5f5; padding: 10px; border-radius: 5px; font-family: monospace;">
+    <div >
       cd backend<br>
       npm install
     </div>
   </li>
   <li>
     <strong>Install client dependencies:</strong>
-    <div style="background-color: #2d2d2d; color: #f5f5f5; padding: 10px; border-radius: 5px; font-family: monospace;">
+    <div>
       cd ../frontend<br>
       npm install
     </div>
@@ -149,11 +146,11 @@
   <li>
     <strong>Start the development servers:</strong><br>
     <strong>Backend:</strong>
-    <div style="background-color: #2d2d2d; color: #f5f5f5; padding: 10px; border-radius: 5px; font-family: monospace;">
+    <div>
       npm run dev
     </div>
     <strong>Frontend:</strong>
-    <div style="background-color: #2d2d2d; color: #f5f5f5; padding: 10px; border-radius: 5px; font-family: monospace;">
+    <div>
       npm run dev
     </div>
   </li>
@@ -161,7 +158,7 @@
 
 <h2>🔐 Environment Variables</h2>
 <p><strong>Example .env (Backend):</strong></p>
-<div style="background-color: #2d2d2d; color: #f5f5f5; padding: 10px; border-radius: 5px; font-family: monospace;">
+<div>
   PORT<br/>
   MONGODB_URI<br/>
   JWT_TOKEN<br/>
