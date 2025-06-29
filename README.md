@@ -150,11 +150,11 @@
 <h2>🔐 Environment Variables</h2>
 <p><strong>Example .env (Backend):</strong></p>
 <div style="background-color: #2d2d2d; color: #f5f5f5; padding: 10px; border-radius: 5px; font-family: monospace;">
-  PORT
-  MONGODB_URI
-  JWT_TOKEN
-  AWS_S3_BUCKET_NAME
-  AWS_S3_ACCESS_KEY_ID
+  PORT<br/>
+  MONGODB_URI<br/>
+  JWT_TOKEN<br/>
+  AWS_S3_BUCKET_NAME<br/>
+  AWS_S3_ACCESS_KEY_ID<br/>
   AWS_S3_SECRET_ACCESS_KEY
 </div>
 
