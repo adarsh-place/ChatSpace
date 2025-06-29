@@ -10,11 +10,13 @@ import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 // const secretAccessKey = process.env.AWS_S3_SECRET_ACCESS_KEY;
 
 export const putObjectUrl = async (fileName, fileType) => {
+  const bucketRegion = process.env.AWS_REGION;
+  const bucketName = process.env.AWS_S3_BUCKET_NAME;
   const accessKeyId = process.env.AWS_S3_ACCESS_KEY_ID;
   const secretAccessKey = process.env.AWS_S3_SECRET_ACCESS_KEY;
 
   const s3Client = new S3Client({
-    region: "ap-south-1",
+    region: bucketRegion,
     credentials: {
       accessKeyId: accessKeyId,
       secretAccessKey: secretAccessKey,
@@ -22,12 +24,12 @@ export const putObjectUrl = async (fileName, fileType) => {
   });
 
   const command = new PutObjectCommand({
-    Bucket: "my-chat-space",
+    Bucket: bucketName,
     Key: `/ProfilePics/${fileName}`,
     ContentType: fileType,
   });
 
-  const fileUrl = `https://my-chat-space.s3.ap-south-1.amazonaws.com//ProfilePics/${fileName}`;
+  const fileUrl = `https://${bucketName}.s3.${bucketRegion}.amazonaws.com//ProfilePics/${fileName}`;
 
   const url = await getSignedUrl(s3Client, command);
   return { uploadUrl: url, fileUrl };
@@ -35,7 +37,7 @@ export const putObjectUrl = async (fileName, fileType) => {
 
 // async function listObjects() {
 //   const command = new ListObjectsV2Command({
-//     Bucket: "my-chat-space",
+//     Bucket: "bucket-name",
 //     key: "/",
 //   });
 //   const response = await s3Client.send(command);
@@ -44,7 +46,7 @@ export const putObjectUrl = async (fileName, fileType) => {
 
 // export const DeleteObject = async(objectKey) => {
 //   const command = new DeleteObjectCommand({
-//     Bucket: "my-chat-space",
+//     Bucket: "bucket-name",
 //     Key: objectKey,
 //   });
 //   const response = await s3Client.send(command);
