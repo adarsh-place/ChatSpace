@@ -128,6 +128,7 @@
   <li>
     <strong>Set up your environment variables:</strong>
     <ul>
+      <li>Port</li>
       <li>MongoDB URI</li>
       <li>JWT Secret</li>
       <li>AWS S3 credentials</li>
@@ -149,11 +150,12 @@
 <h2>🔐 Environment Variables</h2>
 <p><strong>Example .env (Backend):</strong></p>
 <div style="background-color: #2d2d2d; color: #f5f5f5; padding: 10px; border-radius: 5px; font-family: monospace;">
-  MONGODB_URI=your_mongodb_uri<br>
-  JWT_SECRET=your_jwt_secret<br>
-  AWS_ACCESS_KEY_ID=your_aws_key<br>
-  AWS_SECRET_ACCESS_KEY=your_aws_secret<br>
-  AWS_BUCKET_NAME=your_s3_bucket
+  PORT
+  MONGODB_URI
+  JWT_TOKEN
+  AWS_S3_BUCKET_NAME
+  AWS_S3_ACCESS_KEY_ID
+  AWS_S3_SECRET_ACCESS_KEY
 </div>
 
 <h2>🙌 What I Learned</h2>
