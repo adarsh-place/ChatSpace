@@ -94,6 +94,18 @@
 <!-- <h2>📸 Screenshots</h2>
  <p>(Add your own screenshots here)</p> -->
 
+ <h2>🌐 Live Demo</h2>
+<p>The application is hosted on Render and can be accessed at:</p>
+<div style="background-color: #f0f8ff; padding: 10px; border-radius: 5px; border-left: 4px solid #2962ff;">
+  <a href="https://chatspace-uynx.onrender.com/" target="_blank" style="color: #2962ff; text-decoration: none; font-weight: bold;">
+    https://chatspace-uynx.onrender.com/
+  </a>
+  <span style="margin-left: 10px; background-color: #2962ff; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.8em;">
+    LIVE
+  </span>
+</div>
+<p>Note: The backend services might take a few moments to spin up if they've been idle.</p>
+
 <h2>🧑‍💻 Getting Started</h2>
 <h3>Prerequisites</h3>
 <ul>
