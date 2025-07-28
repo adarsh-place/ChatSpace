@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Message from "./Message.jsx";
 import useGetMessage from "../../context/useGetMessage.js";
-import Loading from "../Loading.jsx";
+import { MessageLoading } from "../Loading.jsx";
 import useGetSocketMessage from "../../context/useGetSocketMessage.js";
 function Messages() {
   const { loading, messages } = useGetMessage();
@@ -23,7 +23,7 @@ function Messages() {
       style={{ minHeight: "calc(92vh - 8vh)" }}
     >
       {loading ? (
-        <Loading />
+        <MessageLoading />
       ) : (
         messages.length > 0 &&
         messages.map((message) => (

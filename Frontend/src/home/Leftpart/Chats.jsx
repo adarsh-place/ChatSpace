@@ -11,7 +11,7 @@ export default function Chats() {
   
   return (
     <>
-      <h1 className="text-center font-bold text-3xl p-2 px-11 mt-3 ">Chats</h1>
+      <h1 className="text-center font-bold text-3xl p-2 px-11 mt-3 text-yellow-600">Chats</h1>
       <Search />
       <div
         className=" flex-1  overflow-y-auto"

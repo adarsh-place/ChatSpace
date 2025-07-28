@@ -50,13 +50,13 @@ function Signup() {
           onSubmit={handleSubmit(onSubmit)}
           className="bg-slate-900 px-10 py-5 rounded-md space-y-3 w-[460px]"
         >
-          <h1 className="text-3xl items-center text-blue-600 font-bold">
+          <h1 className="text-3xl items-center text-yellow-600 font-bold">
             ChatSpace
           </h1>
 
           <h2 className="text-[16px] items-center pb-5">
             Create a new{" "}
-            <span className="text-blue-600 font-semibold">Account</span>
+            <span className="text-yellow-600 font-semibold">Account</span>
           </h2>
          
           {/* Fullname */}
@@ -168,14 +168,14 @@ function Signup() {
               <input
                 type="submit"
                 value="Signup"
-                className="text-white bg-blue-600 cursor-pointer w-full rounded-lg py-2 mt-4"
+                className="text-white bg-yellow-600 cursor-pointer w-full rounded-lg py-2 mt-4"
               ></input>
             </div>
             <p>
               Already have any account?{" "}
               <Link
                 to={"/login"}
-                className="text-blue-500 underline cursor-pointer ml-1"
+                className="text-yellow-500 underline cursor-pointer ml-1"
               >
                 {" "}
                 Login

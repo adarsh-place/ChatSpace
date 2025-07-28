@@ -114,8 +114,8 @@ export default function ProfileImageUpload() {
         <button
           onClick={handleUpload}
           disabled={uploading}
-          className={`px-4 py-2 rounded text-white ${
-            uploading ? "bg-gray-400" : "bg-blue-600 hover:bg-blue-700"
+          className={`px-4 py-2 rounded text-slate-100 ${
+            uploading ? "bg-gray-400" : "bg-yellow-700 hover:bg-yellow-800"
           }`}
         >
           {uploading ? "Uploading..." : "Upload"}

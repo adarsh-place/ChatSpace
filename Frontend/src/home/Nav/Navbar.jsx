@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="w-[7%] py-2 bg-slate-950 text-white  flex flex-col justify-between items-center ">
+      <div className="w-[7%] py-2 bg-slate-950 flex flex-col justify-between items-center text-yellow-600">
         <div className="p-1">
           <button title="Chats">
             <BiMessageRoundedDetail

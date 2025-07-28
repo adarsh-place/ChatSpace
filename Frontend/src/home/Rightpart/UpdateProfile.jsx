@@ -36,7 +36,7 @@ function UpdateProfile() {
   return (
     <>
       <div className="flex flex-col h-screen items-center justify-center">
-        <h1 className="mt-8 text-3xl flex items-center justify-center text-blue-600 font-bold">
+        <h1 className="mt-8 text-3xl flex items-center justify-center text-yellow-600 font-bold">
           Update Profile
         </h1>
 
@@ -60,7 +60,7 @@ function UpdateProfile() {
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="text-white bg-blue-600 cursor-pointer w-20 h-10 rounded-lg"
+                  className="text-slate-100 bg-yellow-700 hover:bg-yellow-800 cursor-pointer w-20 h-10 rounded-lg"
                 >
                   Submit
                 </button>

@@ -27,7 +27,7 @@ const NoChatSelected = () => {
         >
           <CiMenuFries className="text-white text-xl" />
         </label>
-        <div className="flex h-screen items-center justify-center">
+        <div className="flex h-screen items-center justify-center text-yellow-600">
           <h1 className="text-center">
             <div className="text-2xl">
               Welcome{" "}

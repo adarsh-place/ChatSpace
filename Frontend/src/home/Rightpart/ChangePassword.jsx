@@ -43,7 +43,7 @@ function ChangePassword() {
           onSubmit={handleSubmit(onSubmit)}
           className="bg-slate-900 px-10 py-5 rounded-md space-y-3 w-[460px]"
         >
-          <h1 className="mb-8 text-3xl items-center text-blue-600 font-bold">
+          <h1 className="mb-8 text-3xl items-center text-yellow-600 font-bold">
             Change Password
           </h1>
 
@@ -99,7 +99,7 @@ function ChangePassword() {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="text-white bg-blue-600 cursor-pointer w-full rounded-lg py-2 mt-4"
+              className="text-white bg-yellow-700 hover:bg-yellow-800 cursor-pointer w-full rounded-lg py-2 mt-4"
             >
               Submit
             </button>

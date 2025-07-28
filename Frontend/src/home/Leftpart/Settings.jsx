@@ -16,12 +16,12 @@ export default function Settings() {
 
   return (
     <>
-      <h1 className="text-center font-bold text-3xl p-2 pb-5 px-11 mt-3 border-b-[0.5px] border-b-slate-500">
+      <h1 className="text-center font-bold text-3xl p-2 pb-5 px-11 mt-3 border-b-[0.5px] border-b-slate-500 text-yellow-600">
         Settings
       </h1>
       
       <button
-        className="p-2 py-5 w-[100%] hover:bg-gray-800 duration-300 flex flex-row"
+        className="p-2 py-5 w-[100%] hover:bg-gray-800 duration-300 flex flex-row text-yellow-600"
         onClick={() => setSelectedSetting("update-profile")}
       >
         <div className="w-[20%] flex justify-end text-right">
@@ -31,7 +31,7 @@ export default function Settings() {
       </button>
 
       <button
-        className="p-2 py-5 w-[100%] hover:bg-gray-800 duration-300 flex flex-row"
+        className="p-2 py-5 w-[100%] hover:bg-gray-800 duration-300 flex flex-row text-yellow-600"
         onClick={() => setSelectedSetting("change-password")}
       >
         <div className="w-[20%] flex justify-end text-right">
