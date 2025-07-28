@@ -1,6 +1,5 @@
 import { useAuth } from "../../context/AuthProvider.jsx";
 import ProfileImage from "../../components/ProfileImage.jsx";
-import profileImg from "../../assets/profile1.jpg";
 
 export default function Profile() {
   const [authUser] = useAuth();
@@ -11,7 +10,7 @@ export default function Profile() {
         Profile
       </h1>
       <div className="mt-8 h-44 flex flex-col items-center justify-center">
-        <ProfileImage width="40" imgLink={authUser.profilePic} />
+        <ProfileImage width="44" imgLink={authUser.profilePic} />
       </div>
       <div className="mt-10 px-5 text-sm text-yellow-600">Your Name</div>
       <div className="mt-2 px-6 text-xl">{authUser.fullname}</div>
